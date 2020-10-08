@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box; /*to make size of box constant*/
+  margin: 0;
+}
+.home {
+  min-height: 100vh; /* min height of our image*/
+  background-image: url("Images/15.jpg");
+  background-size: cover; /*cover the whole bg*/
+  background-position: center; /* center the pic*/
+  padding: 15px;
+}
+header									/*topmost navbar*/ {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  border-bottom: 1px solid white;
+}
+.container								/*the only content part*/ {
+  max-width: 1140px;
+  margin: auto;
+}
+.row								/*to make content of header in flex*/ {
+  display: flex; /*take the content in flexible manner*/
+  flex-wrap: wrap; /*wrap it up into some div(brand and navbar)*/ /* constant space is provided bw the wraps(i.e brand and navbar)*/
+}
+
+header .brand-name a {
+  /*HEMANT*/
+  font-size: 20px;
+  font-weight: 1000;
+  text-decoration: none; /*removing underline from links*/
+  text-transform: uppercase;
+  color: white;
+}
+header .row {
+  /*header row*/
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar ul {
+  /*all the li(the whole li)*/
+  list-style: none; /*remove those bullets*/
+  padding: 0px;
+  margin: 0px;
+}
+header .navbar ul li {
+  /*all the li(only the li)*/
+  display: inline-block; /*converting the diff li's into inline(single line)*/
+  margin-left: 35px;
+}
+header .navbar ul li a {
+  font-size: 17px;
+  text-decoration: none; /*all the li(li ka link)*/
+  font-weight: 1000;
+  line-height: 72px; /*the height of line is 72 */
+  color: white;
+}
+.home .row {
+  min-height: 100vh;
+}
+.home .full-screen {
+  min-height: 100vh;
+}
+.home .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.home .home-content .block {
+  /* whole content block */
+  flex: 0 0 75%;
+  max-width: 75%;
+  border-left: 7px solid white;
+  padding-left: 35px;
+  margin-top: 50px;
+}
+.home .home-content .block h6 {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.2;
+}
+.home .home-content .block h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 50px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.8;
+}
+.home .home-content .block h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.2;
+}
+.home .home-content .block .cv-btn {
+  padding-top: 25px;
+}
+.home .home-content .block .cv-btn a {
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.home .home-content .block .cv-btn a:hover {
+  background-color: white;
+  color: black;
+}
+
+.about-me {
+  padding: 100px 150px; /*the whole second page*/
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.education-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.education-container .img {
+  height: 30px;
+  width: 10px;
+  background-color: #000000;
+}
+.about-me .section-title {
+  flex: 0 0 100%;
+  max-width: 100%; /*about me+info*/
+  margin-bottom: 35px;
+}
+.about-me .section-title h1 {
+  display: inline-block;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700px;
+  margin: 0 0 10px;
+  color: #000000;
+  position: relative;
+  border-bottom: 3px solid #febd01;
+}
+.about-me .section-title p.small {
+  display: block;
+  font-size: 14px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.about-me .about-content .img {
+  flex: 0 0 30.33%;
+  max-width: 30.33%;
+}
+.about-me .about-content .img img {
+  width: 100%;
+  display: block;
+}
+.about-me .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+.about-me .about-content .text h4 {
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0 0 5px;
+  color: #000000;
+  padding-top: 20px;
+}
+.about-me .about-content .text h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 15px;
+  color: #000000;
+  border-bottom: 2px solid #febd01;
+}
+
+.about-me .about-content .text h6 span {
+  color: #febd01;
+}
+.about-me .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 0 0 20px;
+}
+.about-me .about-content .text .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-me .about-content .text .info .list {
+  flex: 0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+.about-me .about-content .text .info .list p {
+  margin: 0;
+}
+.about-me .about-content .text .info .list label {
+  padding-right: 10px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 15px;
+}
+.about-me .about-content .text .social-links {
+  padding-top: 60px;
+}
+.about-me .about-content .text .social-links a {
+  height: 30px;
+  width: 30px;
+  background-color: #000000;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid #000000;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-left: 5px;
+}
+.about-me .about-content .text .social-links a:hover {
+  background-color: transparent;
+}
+
+.about-me .about-content .text .social-links a:hover .fa {
+  color: #000000;
+}
+
+.about-me .about-content .text .social-links a .fa {
+  color: #ffffff;
+  font-size: 12px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.skills .section-title h1 {
+  display: inline-block;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700px;
+  margin: 0 0 10px;
+  color: #000000;
+  position: relative;
+  border-bottom: 3px solid #febd01;
+}
+
+.skills {
+  padding: 100px 15px;
+  background-color: #ffffff;
+}
+
+.skills .skills-content {
+  flex: 0 0 60%;
+  max-width: 60%;
+  padding-right: 40px;
+}
+
+.skills .img {
+  background-color: blue;
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.skills .img img {
+  width: 100%;
+  display: block;
+}
+.align-item-center {
+  align-items: center;
+}
+.skills .skills-content .section-title p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 5px 0 0px;
+  margin-bottom: 50px;
+}
+.skills .skills-content .skill-box {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.skills .skills-content .skill-box h6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0 0 10px;
+}
+.skills .skills-content .skill-box .skill-bar {
+  height: 5px;
+  background-color: #eeeeee;
+  position: relative;
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in {
+  background-color: #febd01;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in span {
+  color: #838383;
+  font-size: 16px;
+  font-weight: 500px;
+  position: absolute;
+  right: 0;
+  top: -30px; /*niche se uper */
+}
+
+.certificates .section-title h1 {
+  display: inline-block;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700px;
+  margin: 0 0 10px;
+  color: #000000;
+  position: relative;
+  border-bottom: 3px solid #febd01;
+}
+.certificates .section-title p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 5px 0 0px;
+  margin-bottom: 50px;
+}
+.certificates .portfolio-gallery {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.certificates .portfolio-gallery .item {
+  margin-bottom: 106px;
+  margin-right: 15px;
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+.certificates .portfolio-gallery .item img {
+  width: 100%;
+  display: block;
+}
+.certificates .portfolio-gallery .item h4 {
+  width: 100%;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: right;
+  margin-top: 10px;
+}
+footer {
+  padding: 100px;
+  background-color: black;
+}
+footer .Lname {
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+footer .social {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer .social a {
+  color: #999999;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 12px;
+  transition: all 0.5s ease;
+}
+footer .social a:hover {
+  color: #ffffff;
+}
